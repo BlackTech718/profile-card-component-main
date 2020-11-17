@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+.sub-stat {
+  color: #969696;
+}
+
 body {
   background-size: 100%;
   background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
@@ -26,20 +30,25 @@ body {
 }
 
 .top-card {
+  max-width: 100%;
   height: 150px;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   background-image: url(/images/bg-pattern-card.svg);
   z-index: -1;
+  position: relative;
 }
 
 .bottom-card {
   background-color: white;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 .bottom-card .lg-circle {
   position: absolute;
   width: 100px;
+  max-width: 100px;
   height: 100px;
   top: 25%;
   left: 120px;
@@ -53,12 +62,13 @@ body {
 }
 
 .content {
+  max-width: 100%;
   padding-top: 60px;
   text-align: center;
 }
 
 .content .usr {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #969696;
 }
 
 .content .usr .name_age {
@@ -90,5 +100,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 5%;
+}
+
+.stats .sub-stat {
+  font-size: 10px;
+  color: #969696;
 }
 /*# sourceMappingURL=styles.css.map */
