@@ -1,0 +1,77 @@
+// importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-size: 100%;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-y: -200px, 500px;
+    background-position-x: -150px,100px;
+    background-color: hsl(185, 75%, 39%);
+    padding-top: 200px;
+    font-family:'Kumbh Sans',sans-serif;
+}
+.container{
+    width:90%;
+    height: 400px;
+    margin: auto auto auto auto;
+    position: relative;
+    border-radius: 5%;
+}
+.top-card{
+    height: 150px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background-image: url(/images/bg-pattern-card.svg);
+    z-index: -1;
+}
+.bottom-card{
+    background-color:white;
+    .lg-circle{
+        position: absolute;
+        width:100px;
+        height: 100px;
+        top:25%;
+        left:120px;
+        background-color:white;
+        border-radius: 50%;
+        img{
+            border-radius: 50%;
+            max-width: 100%;
+        }
+    }
+}
+// ***********************************************
+.content{
+    padding-top:60px;
+    text-align: center;
+    .usr{
+        border-bottom: 1px solid grey;
+        .name_age{
+            justify-content: center;
+            display:flex;
+            padding-bottom:5px;
+            h4{
+                padding-right:10px;
+                padding-bottom:10px;
+            }
+        }
+        .locall{
+            padding-bottom: 15px;
+        }
+    }
+}
+// ************************************************
+.stats{
+    height:150px;
+    padding:20px 30px;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 5%;
+
+}
