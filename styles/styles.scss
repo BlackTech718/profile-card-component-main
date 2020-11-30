@@ -14,86 +14,108 @@ $Darkgray: hsl(0, 0%, 59%);
     margin:0px;
     box-sizing: border-box;
 }
-.sub-stat{
-    color:$Darkgray;
+// utilities
+.local{
+    font-size: 15px;
 }
+.light-text{
+    color:$Darkgrayishblue;
+    font-weight: normal;
+}
+.text{
+    font-size: 14px;
+    color:$Darkgrayishblue;
+    text-align: center;
+}
+.numbers{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 body{
-    background-size: 100%;
-    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-image: url(/images/bg-pattern-top.svg),url(/images/bg-pattern-bottom.svg);
+    background-color: $Darkcyan;
     background-repeat: no-repeat;
-    background-position-y: -200px, 500px;
-    background-position-x: -150px,100px;
-    background-color: hsl(185, 75%, 39%);
-    padding-top: 200px;
-    font-family:'Kumbh Sans',sans-serif;
+    background-position-y:-650px,400px;
+    background-position-x:-650px, 120px ;
+    margin-top:180px;
+    font-family:'Kumbh Sans', sans-serif; 
 }
 .container{
-    width:90%;
-    height: 400px;
-    margin: auto auto auto auto;
+    width: 80%;
+    height: 350px;
+    background-color:#fff;
+    margin:auto;
+    border-radius: 15px;
     position: relative;
-    border-radius: 5%;
 }
-.top-card{
-    max-width: 100%;
-    height: 150px;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+.container-top{
+    height: 35%;
     background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     z-index: -1;
-    position: relative;
 }
-.bottom-card{
-    background-color:white;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    // max-width: 90%;
-    .lg-circle{
-        position: absolute;
-        width:100px;
-        max-width:100px;
-        height: 100px;
-        top:25%;
-        left:120px;
-        background-color:white;
-        border-radius: 50%;
-        img{
-            border-radius: 50%;
-            max-width: 100%;
-        }
-    }
-}
-// ***********************************************
-.content{
-    max-width: 100%;
-    padding-top:60px;
-    text-align: center;
-    .usr{
-        border-bottom: 1px solid $Darkgray;
-        .name_age{
-            justify-content: center;
-            display:flex;
-            padding-bottom:5px;
-            h4{
-                padding-right:10px;
-                padding-bottom:10px;
-            }
-        }
-        .locall{
-            padding-bottom: 15px;
-        }
-    }
-}
-// ************************************************
-.stats{
-    height:150px;
-    padding:20px 30px;
+.container-pic{
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
     display:flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+}
+.container-content{
+    margin-top: 80px;
+}
+.person-bio{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.name-age{
+    padding-bottom: 15px;
+}
+.person-stats{
+    border-top: 0.25px solid lightgray;
+    padding: 15px 20px;
+    margin-top: 20px;
+    display:flex;  
     justify-content: space-between;
-    border-radius: 5%;
-    .sub-stat{
-        font-size:10px;
-        color:$Darkgray;
+
+}
+.followers,.likes,.photos{
+    display:flex;
+    flex-direction: column;
+}
+
+
+// media query
+
+@media(min-width: 395px){
+    .container-pic{
+        left: 105px;
+    }
+}
+@media(min-width: 450px){
+    .container-pic{
+        left: 130px;
+    }
+}
+
+@media(min-width: 490px){
+    .container-pic{
+        left: 200px;
     }
 
 }

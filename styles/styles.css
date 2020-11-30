@@ -6,104 +6,135 @@
           box-sizing: border-box;
 }
 
-.sub-stat {
-  color: #969696;
+.local {
+  font-size: 15px;
 }
 
-body {
-  background-size: 100%;
-  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  background-position-y: -200px, 500px;
-  background-position-x: -150px,100px;
-  background-color: #19a2ae;
-  padding-top: 200px;
-  font-family: 'Kumbh Sans',sans-serif;
+.light-text {
+  color: #6a6f81;
+  font-weight: normal;
 }
 
-.container {
-  width: 90%;
-  height: 400px;
-  margin: auto auto auto auto;
-  position: relative;
-  border-radius: 5%;
-}
-
-.top-card {
-  max-width: 100%;
-  height: 150px;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-  background-image: url(/images/bg-pattern-card.svg);
-  z-index: -1;
-  position: relative;
-}
-
-.bottom-card {
-  background-color: white;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-}
-
-.bottom-card .lg-circle {
-  position: absolute;
-  width: 100px;
-  max-width: 100px;
-  height: 100px;
-  top: 25%;
-  left: 120px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.bottom-card .lg-circle img {
-  border-radius: 50%;
-  max-width: 100%;
-}
-
-.content {
-  max-width: 100%;
-  padding-top: 60px;
+.text {
+  font-size: 14px;
+  color: #6a6f81;
   text-align: center;
 }
 
-.content .usr {
-  border-bottom: 1px solid #969696;
-}
-
-.content .usr .name_age {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.numbers {
+  text-align: center;
   padding-bottom: 5px;
 }
 
-.content .usr .name_age h4 {
-  padding-right: 10px;
-  padding-bottom: 10px;
+body {
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-color: #19a2ae;
+  background-repeat: no-repeat;
+  background-position-y: -650px,400px;
+  background-position-x: -650px, 120px;
+  margin-top: 180px;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
-.content .usr .locall {
+.container {
+  width: 80%;
+  height: 350px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+.container-top {
+  height: 35%;
+  background-image: url(/images/bg-pattern-card.svg);
+  background-repeat: repeat-x;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: -1;
+}
+
+.container-pic {
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  border-radius: 50%;
+  height: 105px;
+  width: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-pic img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.container-content {
+  margin-top: 80px;
+}
+
+.person-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.name-age {
   padding-bottom: 15px;
 }
 
-.stats {
-  height: 150px;
-  padding: 20px 30px;
+.person-stats {
+  border-top: 0.25px solid lightgray;
+  padding: 15px 20px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-radius: 5%;
 }
 
-.stats .sub-stat {
-  font-size: 10px;
-  color: #969696;
+.followers, .likes, .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 395px) {
+  .container-pic {
+    left: 105px;
+  }
+}
+
+@media (min-width: 450px) {
+  .container-pic {
+    left: 130px;
+  }
+}
+
+@media (min-width: 490px) {
+  .container-pic {
+    left: 200px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
