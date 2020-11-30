@@ -33,7 +33,7 @@ $Darkgray: hsl(0, 0%, 59%);
 }
 
 body{
-    background-image: url(/images/bg-pattern-top.svg),url(/images/bg-pattern-bottom.svg);
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
     background-color: $Darkcyan;
     background-repeat: no-repeat;
     background-position-y:-650px,400px;
@@ -51,7 +51,7 @@ body{
 }
 .container-top{
     height: 35%;
-    background-image: url(/images/bg-pattern-card.svg);
+    background-image: url(images/bg-pattern-card.svg);
     background-repeat: repeat-x;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
