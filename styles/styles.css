@@ -47,7 +47,7 @@ body {
 
 .container-top {
   height: 35%;
-  background-image: url(images/bg-pattern-card.svg);
+  background-image: url(/images/bg-pattern-card.svg);
   background-repeat: repeat-x;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
